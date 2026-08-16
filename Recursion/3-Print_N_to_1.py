@@ -10,4 +10,4 @@ class Solution:
         if n == 0:
             return
         print(n)
-        self.printNumbers(n-1)
+        self.printNumbers(n-1) # it is needed when you're dealing with the recursions
