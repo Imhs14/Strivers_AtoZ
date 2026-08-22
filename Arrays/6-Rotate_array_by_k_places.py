@@ -12,3 +12,4 @@ p1 = Solution()
 print(p1.rotateArray([1,2,3,4,5,6],2))
 
 print(p1.rotateArray([3, 4, 1, 5, 3, -5],8))
+# Try right rotating 
