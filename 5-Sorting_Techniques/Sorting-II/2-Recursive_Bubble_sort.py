@@ -16,7 +16,7 @@ n = len(arr)
 print(Rbs(arr,n))
 
 # Time = O(n^2) for avg and worst, Best Case being O(n)
-# Space = O(1)
+# Space = O(N) auxiliary stack space.
 
 class Solution:
     def bubbleSort(self, nums):
