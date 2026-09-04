@@ -17,3 +17,28 @@ print(Rbs(arr,n))
 
 # Time = O(n^2) for avg and worst, Best Case being O(n)
 # Space = O(1)
+
+class Solution:
+    def bubbleSort(self, nums):
+
+        def Rbs(nums, n):
+            if n == 1:
+                return 
+            didswap = False
+            for j in range(n-1):
+                if nums[j] > nums[j+1]:
+                    nums[j], nums[j+1] = nums[j+1], nums[j]
+                    didswap = True
+            
+            if not didswap:
+                return 
+            
+            Rbs(nums,n-1)
+
+        n = len(nums)
+        Rbs(nums,n)
+        return nums
+
+p = Solution()
+
+print(p.bubbleSort([1,9,7,4,2,3,5]))
