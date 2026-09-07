@@ -24,7 +24,7 @@ CONFIG = {
 }
 # ------------------------------------------------------------------
 
-OUTPUT_PATH = os.path.join("assets", "dsa-progress.svg")
+OUTPUT_PATH = "dsa-progress.svg"
 
 # Card / theme colors
 BG = "#0d0d0d"
@@ -123,7 +123,9 @@ def build_svg(cfg):
 
 def main():
     svg = build_svg(CONFIG)
-    os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
+    out_dir = os.path.dirname(OUTPUT_PATH)
+    if out_dir:
+        os.makedirs(out_dir, exist_ok=True)
     with open(OUTPUT_PATH, "w") as f:
         f.write(svg)
     print(f"Wrote {OUTPUT_PATH}")
