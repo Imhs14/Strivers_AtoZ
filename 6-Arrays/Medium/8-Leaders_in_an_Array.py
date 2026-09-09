@@ -1,3 +1,4 @@
+# Complexity = Time = O(n), Space = O(n)
 class Solution:
     def leaders(self, nums):
         n = len(nums) - 1
@@ -11,6 +12,6 @@ class Solution:
         return ans
 
 p = Solution()
-print(p.leaders([1, 2, 5, 3, 1, 2]))
-print(p.leaders([-3, 4, 5, 1, -4, -5]))
-print(p.leaders( [-3, 4, 5, 1, -30, -10]))
+print(p.leaders([1, 2, 5, 3, 1, 2])) # [5, 3, 2]
+print(p.leaders([-3, 4, 5, 1, -4, -5])) # [5, 1, -4, -5]
+print(p.leaders( [-3, 4, 5, 1, -30, -10])) # [5, 1, -10]
