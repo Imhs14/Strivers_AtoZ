@@ -17,7 +17,7 @@ import os
 CONFIG = {
     "easy_solved": 54,
     "easy_total": 371,
-    "medium_solved": 7,
+    "medium_solved": 11,
     "medium_total": 470,
     "hard_solved": 0,
     "hard_total": 253,
